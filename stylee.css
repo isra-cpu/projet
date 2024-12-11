@@ -1,0 +1,69 @@
+
+
+body {
+  background-image: url('image/stars.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* En-tête */
+header {
+  text-align: center;
+  color:#F6B6D0;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Conteneur des planètes */
+.planet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.planet {
+  text-align: center;
+  position: relative;
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planet img {
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.planet:hover img {
+  transform: scale(1.2) rotate(15deg);
+  filter: brightness(1.2);
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.6);
+}
+
+.planet p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #001d3d;
+  color: #aaa;
+}
